@@ -8,7 +8,7 @@ document.querySelector('.login-form').addEventListener('submit', (e) => {
   const password = document.querySelector('[name="password"]');
 
   
-  if (email.value === '' || password.value === '') {
+  if (email.value === '' || password.value === ''|| password.value.length > '8' ) {
     alert('All fields must be filled in!');
     return;
   }
